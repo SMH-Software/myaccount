@@ -42,11 +42,11 @@ const getAccounts = async (endpoint) => {
 
 
 //Get all Accounts
-getAccounts('http://localhost:4000/api/accounts-register')
+getAccounts('server-murex-five.vercel.app/api/accounts-register')
 
 
 //Add a new account 
-addAccount('http://localhost:4000/api/accounts-register', form, formInputs, message)
+addAccount('server-murex-five.vercel.app/api/accounts-register', form, formInputs, message)
 
 //Update account 
 updateAccount(formUpdate, formInputsUpdate, messageSuccess)
