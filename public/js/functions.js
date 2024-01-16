@@ -112,7 +112,7 @@ export function getAccount (elementID, alert)  {
             const form = document.querySelector('.form')
             form.style.display = 'none'
 
-            const response = await fetch(`https://server-kco4.vercel.app/api/accounts-register/${id}`)
+            const response = await fetch(`https://server-gray-seven.vercel.app/api/accounts-register/${id}`)
             const json = await response.json()   
             
             if(!response.ok){
@@ -151,7 +151,7 @@ export function updateAccount(idForm, formInput, alert) {
             website: formInput[3].value,
         }
     
-        const response = await fetch(`https://server-kco4.vercel.app/api/accounts-register/${formInput[4].value}`, {
+        const response = await fetch(`https://server-gray-seven.vercel.app/api/accounts-register/${formInput[4].value}`, {
             method: 'PATCH', 
             headers: {
                 'Content-Type': 'application/json',
@@ -186,7 +186,7 @@ export function deleteAccount (elementID, alert) {
             deleteOne.addEventListener('click', async () => {
                 const id = deleteOne.getAttribute('data-id')
 
-               const response = await fetch(`https://server-kco4.vercel.app/api/accounts-register/${id}`, {
+               const response = await fetch(`https://server-gray-seven.vercel.app/api/accounts-register/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',
